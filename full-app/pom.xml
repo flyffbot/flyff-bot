@@ -6,7 +6,7 @@
 
     <groupId>flyffbot</groupId>
     <artifactId>FlyffBot</artifactId>
-    <version>0.4.4</version>
+    <version>0.5.0</version>
     <name>FlyffBot</name>
 
     <parent>
