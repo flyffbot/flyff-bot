@@ -1,0 +1,69 @@
+{
+  "common": {
+    "keyCodes": {
+      "0x11": "CTRL",
+      "0x12": "ALT",
+      "0x30": "0",
+      "0x31": "1",
+      "0x32": "2",
+      "0x33": "3",
+      "0x34": "4",
+      "0x35": "5",
+      "0x36": "6",
+      "0x37": "7",
+      "0x38": "8",
+      "0x39": "9"
+    },
+    "status": {
+      "paused": "Pipe {{i}} is paused!<br/>Resume it via {{shortcut}}",
+      "running": "Pipe {{i}} is running!"
+    },
+    "nohwnd": "Feature locked. Select Target Flyff window to unlock it!"
+  },
+  "globalHotKeys": {
+    "title": "Global HotKeys",
+    "addPipe": "Add pipe",
+    "removePipe": "Remove pipe"
+  },
+  "pipe": {
+    "title": "Pipe {{i}}",
+    "defaultHotkeys": {
+      "title": "Default HotKeys",
+      "pause": "Pause Pipe",
+      "useCustomActionSlot": "Use Custom Action Slot"
+    },
+    "selectWindowName": {
+      "title": "Target Flyff window",
+      "placeholder": "Select the target flyff window by name (look at the top window area)"
+    },
+    "hotKeysLoop": {
+      "title": "HotKeys loop",
+      "keys": {
+        "title": "Keys",
+        "placeholder": "..."
+      },
+      "delayMs": "Delay",
+      "active": "Active"
+    },
+    "customActionSlot": {
+      "title": "Custom action slot ({{count}} skills)",
+      "castTimeMs": "Cast time",
+      "keys": {
+        "title": "Keys",
+        "placeholder": "..."
+      }
+    }
+  },
+  "tabs": {
+    "pipelines": {
+      "title": "Pipelines"
+    },
+    "help": {
+      "title": "Tutorials",
+      "readyToGo": "Ready to go",
+      "addRemovePipe": "How to add or remove a pipeline?",
+      "hotkeysLoop": "How to use Hotkeys loop?",
+      "customActionSlot": "How to use Custom Action Slot?"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+server:
+  port: 8899
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console #http://localhost:8899/h2-console
+      settings.trace: true
+      settings.web-allow-others: true
+  datasource:
+    url: jdbc:h2:file:./demo
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: false
+    generate-ddl: true
+    hibernate.ddl-auto: update
+logging:
+  file.name: flyff-bot-cfg/logs.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    flyffbot: DEBUG
+    org.springframework.web: INFO
+    org.jnativehook: WARN
+disable-key-down-hook: false # Only for debug, to remove lag caused by hotkey hook in debug mode #
+auto-save:
+  folder-name: flyff-bot-cfg
+native-service:
+  get-window-list-args:
+    api:
+      name: api
+      value: get-window-list
+    window-search-key:
+      name: window-search-key
+      value: Flyff
+  send-key-down-args:
+    api:
+      name: api
+      value: send-key-down
+    selected-hwnd-id:
+      name: selected-hwnd-id
+      value: # Dynamic value, read from UI combobox
+    keystroke-id:
+      name: keystroke-id
+      value: # Dynamic value, read from UI combobox
+  send-key-up-args:
+    api:
+      name: api
+      value: send-key-up
+    selected-hwnd-id:
+      name: selected-hwnd-id
+      value: # Dynamic value, read from UI combobox
+    keystroke-id:
+      name: keystroke-id
+      value: # Dynamic value, read from UI combobox
+socket:
+  topics:
+    updated-configuration:
+    updated-window-list: /topic/updated-window-list
