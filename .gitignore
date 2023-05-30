@@ -1,5 +1,5 @@
 .dea
 release
-mysetup.exe
 flyffbot.lock
 logs
+*.exe
